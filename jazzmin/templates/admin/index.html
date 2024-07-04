@@ -1,7 +1,6 @@
 {% extends "admin/base_site.html" %}
 {% load i18n static jazzmin %}
 {% get_jazzmin_ui_tweaks as jazzmin_ui %}
-{% load static %}
 
 {% block bodyclass %}{{ block.super }} dashboard{% endblock %}
 
@@ -65,7 +64,7 @@
 
                 {% endfor %}
                 </div>
-                <img title="Dashboardpbi 2" width="1140" height="541.25" src="{% static 'images/jazzdash.png' %}" alt="Description of your image">
+                <iframe title="DashboardInt" width="1140" height="541.25" src="https://app.powerbi.com/reportEmbed?reportId=c25ba4e7-ca83-4b76-892d-541d547ded08&autoAuth=true&ctid=93f33571-550f-43cf-b09f-cd331338d086" frameborder="0" allowFullScreen="true"></iframe>
             </div>
 
 
